@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<ul>
+			<!-- komentarz html -->
+			{# wyswietla liste postow #}
+			{% for post in posty %}
+				<li><a href="{% url 'pokaz' post.id %}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
